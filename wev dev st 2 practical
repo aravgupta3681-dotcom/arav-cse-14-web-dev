@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Experiment 10</title>
+    
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* --- Navbar Styling (Flexbox) --- */
+        .navbar {
+            background-color: #1a1a1a; 
+            color: white;
+            padding: 1rem 2rem; 
+            display: flex; /* Flexbox Property */
+            justify-content: space-between; /* Horizontal Alignment */
+            align-items: center; /* Vertical Alignment */
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #cccccc;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: white;
+        }
+
+        /* Utility Links (Cart & Login) */
+        .nav-utilities {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-utilities a {
+            text-decoration: none;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .login-btn {
+            border: 1px solid white;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        /* --- Main Content Styling --- */
+        .content {
+            padding: 20px;
+        }
+
+        .content h1 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        /* --- Media Queries (Required for Objective 5) --- */
+        /* This part CANNOT be done with inline style="" attributes */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* Stack vertically on mobile */
+                align-items: flex-start;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 15px;
+                gap: 10px;
+            }
+
+            .nav-utilities {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-utilities">
+            <a href="#">Cart &#128722;</a>
+            <a href="#" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Welcome to ShopEase!</h1>
+        <p>Your one-stop destination for all shopping needs.</p>
+    </main>
+
+</body>
+</html>
