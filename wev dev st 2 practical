@@ -6,7 +6,6 @@
     <title>ShopEase - Experiment 10</title>
     
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -18,14 +17,13 @@
             background-color: #f4f4f4;
         }
 
-        /* --- Navbar Styling (Flexbox) --- */
         .navbar {
             background-color: #1a1a1a; 
             color: white;
             padding: 1rem 2rem; 
-            display: flex; /* Flexbox Property */
-            justify-content: space-between; /* Horizontal Alignment */
-            align-items: center; /* Vertical Alignment */
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
         }
 
         .logo {
@@ -34,7 +32,6 @@
             letter-spacing: 1px;
         }
 
-        /* Navigation Links */
         .nav-links {
             list-style: none;
             display: flex;
@@ -52,7 +49,6 @@
             color: white;
         }
 
-        /* Utility Links (Cart & Login) */
         .nav-utilities {
             display: flex;
             gap: 20px;
@@ -71,7 +67,6 @@
             border-radius: 4px;
         }
 
-        /* --- Main Content Styling --- */
         .content {
             padding: 20px;
         }
@@ -81,11 +76,9 @@
             font-size: 1.8rem;
         }
 
-        /* --- Media Queries (Required for Objective 5) --- */
-        /* This part CANNOT be done with inline style="" attributes */
         @media (max-width: 768px) {
             .navbar {
-                flex-direction: column; /* Stack vertically on mobile */
+                flex-direction: column; 
                 align-items: flex-start;
                 padding: 1rem;
             }
